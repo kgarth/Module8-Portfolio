@@ -5,5 +5,6 @@ class ItemToPurchase():
         self.item_quantity = quantity
 
     def print_item_cost(self):
-        print('{} {} @ ${} = ${}'.format(self.item_name, self.item_quantity, 
+        temp_str = ('{} {} @ ${} = ${}'.format(self.item_name, self.item_quantity, 
                                          self.item_price, self.item_price * self.item_quantity))
+        return temp_str

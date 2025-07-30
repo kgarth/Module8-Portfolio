@@ -4,6 +4,7 @@ def create_items(qty):
     item_list = []
 
     for i in range(qty):
+        print(f'Item {i + 1}')
         while True:
             try:
                 temp_name = input('Enter the item name:\n')
@@ -45,7 +46,7 @@ def main():
     print('{:^30}'.format('TOTAL COST'))
 
     for item in item_list:
-        total_cost += (item.item_cost * item.item_quantity)
+        total_cost += (item.item_price * item.item_quantity)
         print('{:^30}'.format(item.print_item_cost()))
 
     print('{:^30}'.format(f'Total: ${total_cost}'))
