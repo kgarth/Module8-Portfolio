@@ -1,10 +1,12 @@
 class ItemToPurchase():
-    def __init__(self, name = 'none', price = 0, quantity = 0):
+    def __init__(self, name='none', price=0, quantity=0, description='none'):
         self.item_name = name
         self.item_price = price
         self.item_quantity = quantity
+        self.item_description = description
 
     def print_item_cost(self):
-        temp_str = ('{} {} @ ${} = ${}'.format(self.item_name, self.item_quantity, 
-                                         self.item_price, self.item_price * self.item_quantity))
-        return temp_str
+        return f'{self.item_name} {self.item_quantity} @ ${self.item_price} = ${self.item_price * self.item_quantity}'.center(60)
+
+    def print_item_description(self):
+        return f'{self.item_name}: {self.item_description}'.center(60)
