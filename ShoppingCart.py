@@ -44,17 +44,19 @@ class ShoppingCart():
         return total_cost
 
     def print_total(self):
-        print(f'{self.customer_name}\'s Shopping Cart - {self.current_date}'.center(60))
-        print(f'Number of Items: {self.get_num_items_in_cart()}'.center(60))
+        print(f'{self.customer_name}\'s Shopping Cart - {self.current_date}')
+        print(f'Number of Items: {self.get_num_items_in_cart()}')
         
         for item in self.cart_items:
             print(item.print_item_cost())
 
-        print(f'Total: ${self.get_cost_of_cart()}'.center(60))
+        print(f'Total: ${self.get_cost_of_cart()}')
+        print()
 
     def print_descriptions(self):
-        print(f'{self.customer_name}\'s Shopping Cart - {self.current_date}'.center(60))
-        print(f'Item Descriptions'.center(60))
+        print(f'{self.customer_name}\'s Shopping Cart - {self.current_date}')
+        print(f'Item Descriptions')
 
         for item in self.cart_items:
             print(item.print_item_description())
+        print()

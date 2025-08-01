@@ -6,7 +6,7 @@ class ItemToPurchase():
         self.item_description = description
 
     def print_item_cost(self):
-        return f'{self.item_name} {self.item_quantity} @ ${self.item_price} = ${self.item_price * self.item_quantity}'.center(60)
+        return f'{self.item_name.title()} {self.item_quantity} @ ${self.item_price} = ${self.item_price * self.item_quantity}'
 
     def print_item_description(self):
-        return f'{self.item_name}: {self.item_description}'.center(60)
+        return f'{self.item_name.title()}: {self.item_description}'
