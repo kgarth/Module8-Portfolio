@@ -30,7 +30,7 @@ class ShoppingCart():
             if name == item.item_name:
                 return self.cart_items[pos]
         else:
-            return -1
+            return None
 
     def get_num_items_in_cart(self):
         return len(self.cart_items)
