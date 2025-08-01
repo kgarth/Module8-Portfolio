@@ -120,9 +120,13 @@ def main():
             # 'yes' to remove, 'no' to cancel
             if confirm == 'yes': 
                 shopping_cart.remove_item(temp_name)
+                print()
                 print(f'{temp_name.title()} has been removed.')
+                print()
             else:
+                print()
                 print(f'Aborting removal of {temp_name.title()}')
+                print()
         
         elif choice == 'c': # Using choice 'c' to modify an item.
             print()
